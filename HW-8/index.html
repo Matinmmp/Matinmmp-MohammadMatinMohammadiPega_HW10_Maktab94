@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 500px;
+    }
+
+    .message {
+        padding: 1rem;
+        color: tomato;
+        background-color: black;
+        margin-block: 1rem;
+    }
+
+    .message__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .close {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <button id="addCloseBtn">Add Close Button</button>
+    <div class="container">
+        <div class="box">
+            <section class="message">
+                <header class="message__header">
+                    <h3 class="header__title">Horse 1</h3>
+                </header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem cum explicabo aperiam provident
+                    voluptas quod dicta veritatis quisquam quo.</p>
+            </section>
+
+            <section class="message">
+                <header class="message__header">
+                    <h3 class="header__title">Horse 2</h3>
+                </header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem cum explicabo aperiam provident
+                    voluptas quod dicta veritatis quisquam quo.</p>
+            </section>
+
+            <section class="message">
+                <header class="message__header">
+                    <h3 class="header__title">Horse 3</h3>
+                </header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed dolorem cum explicabo aperiam provident
+                    voluptas quod dicta veritatis quisquam quo.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
