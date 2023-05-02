@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    span {
+        cursor: pointer;
+    }
+
+    ol {
+        height: 200px;
+    }
+
+    .colapse {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+</style>
+
+<body>
+
+    <span id="cl">Sweeties (click me)!</span>
+    <ol id="list">
+        <li>Cake</li>
+        <li>Donut</li>
+        <li>Honey</li>
+    </ol>
+
+    <script>
+        cl.addEventListener('click', () => {
+            list.classList.toggle("colapse");
+        });
+    </script>
+</body>
+
+</html>
