@@ -1,0 +1,70 @@
+
+
+#main {
+    background-color: rgb(212, 0, 0);
+    height: 100%;
+}
+
+.bg-white-50 {
+    background-color: #f6f6f6;
+}
+
+.menu-box {
+    height: 90vh;
+}
+
+.menu-box__body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.list {
+
+    overflow: hidden;
+}
+
+.item {
+    height: 7rem;
+}
+
+
+.number-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 1.3rem;
+}
+
+.number-box span:nth-child(1),
+.number-box span:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    width: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9d0000;
+    cursor: pointer;
+}
+
+.number-box span:nth-child(1) {
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.number-box span:nth-child(3) {
+    border-radius: 0 .3rem .3rem 0;
+}
+
+.number-box span:nth-child(2) {
+    text-align: center;
+    width: 2rem;
+}
+
+.pay-box{
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.578);
+}

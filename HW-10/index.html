@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="main" class="h-100">
+        <div class="container">
+            <div class="row  py-5">
+                <section class="col-12 mt-4 mt-lg-0 col-lg-4 order-1 order-lg-0">
+                    <div class="pay-box bg-white-50 rounded-4 fw-bold p-3">
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>
+                                <div class=" d-flex text-end align-items-center">
+                                    <span class="me-1"> تومان </span>
+                                    <span id="total-pay"> 0 </span>
+                                </div>
+                            </span>
+                            <span>: جمع کل سفارشات </span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>
+                                <div class=" d-flex text-end align-items-center">
+                                    <span class="me-1"> تومان </span>
+                                    <span id="service-pay"> 0 </span>
+                                </div>
+                            </span>
+                            <span>: حق سرویس و کارمزد </span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span>
+                                <div class=" d-flex text-end align-items-center">
+                                    <span class="me-1"> تومان </span>
+                                    <span id="reduction"> 0 </span>
+                                </div>
+                            </span>
+                            <span>: تخفیف </span>
+                        </div>
+                        <div class="input-group flex-nowrap mt-3">
+                            <span i class="input-group-text" id="addon-wrapping"><i class="bi bi-check2"></i></span>
+                            <input type="text" class="form-control" placeholder="کد تخفیف" dir="rtl"
+                              id="reduction_name"   aria-label="Username" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class=" p-2 rounded-2 bg-warning mt-5 fw-bold" style="color: black;">
+                            <div class="d-flex justify-content-between">
+                                <span>
+                                    <div class=" d-flex text-end align-items-center">
+                                        <span class="me-1"> تومان </span>
+                                        <span id="pay"> 0 </span>
+                                    </div>
+                                </span>
+                                <span>: مبلغ قابل پرداخت </span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-danger d-block py-3 mt-3" style="background-color: #9d0000;"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">ثبت
+                            سفارش</a>
+                    </div>
+                </section>
+
+                <section class="col-12 col-lg-8 order-0 order-lg-1">
+                    <div class="menu-box d-flex flex-column rounded-4 bg-white-50">
+                        <div class="menu-box__header py-4 shadow-sm text-center">
+                            <h4>رستوران مک دونالد شعبه ی تهران</h4>
+                        </div>
+                        <div class="menu-box__body flex-grow-1 py-2 ">
+
+                            <div class=" list px-5 row justify-content-center justify-content-lg-between  ">
+
+                                <!-- <section class="item row align-items-center col-11 col-lg-6 bg-white rounded-2 shadow-sm mt-3">
+                                    <div class="col-8 ">
+                                        <div class="d-flex flex-column ">
+                                            <span class="text-end fw-bold">همبرگر مخصوص</span>
+                                            <div class=" d-flex text-end align-items-center ms-auto fw-light">
+                                                <span class="me-1"> تومان </span>
+                                                <span> 10000 </span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                                <div class=" d-flex text-end align-items-center">
+                                                    <span class="me-1"> تومان </span>
+                                                    <span> 0 </span>
+                                                </div>
+                                                <div class="number-box">
+                                                    <span><i class="bi bi-dash"></i></span>
+                                                    <span class="bg-white-50">0</span>
+                                                    <span><i class="bi bi-plus-lg"></i></span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 h-100">
+                                        <div class="h-100 w-100">
+                                            <img src="img/1.png" class="img-fluid h-100 w-100" alt="">
+                                        </div>
+                                    </div>
+                                </section>  -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Button trigger modal -->
+    <button>
+
+    </button>
+
+    <!-- Modal -->
+    <div dir="rtl" class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel" dir="rtl">جمع کل</h1>
+                    <button type="button" class="btn-close m-0 " data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                </div>
+                <div class="modal-footer d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                    <button type="button" class="btn btn-primary">سفارس</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
