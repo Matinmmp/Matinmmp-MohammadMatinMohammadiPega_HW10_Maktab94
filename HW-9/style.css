@@ -1,0 +1,92 @@
+body {
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool_tip {
+    position: absolute;
+    background-color: tomato;
+    color: black;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    cursor: pointer;  
+}
+
+.tool_tip:hover:before {
+    content: " ";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(10, 0, 77);
+    border-radius: .2rem;
+}
+
+.top::before {
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg)  scale(1) !important;
+}
+
+.left::before {
+    right: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%) rotateZ(45deg)  scale(1) !important;
+
+}
+
+.right::before {
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%) rotateZ(45deg)  scale(1) !important;
+}
+
+.bottom::before {
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg)  scale(1) !important;
+}
+
+.tool_tip:hover::after{
+    content: " Hi";
+    position: absolute;
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .3rem;
+    background-color: rgb(10, 0, 77);  
+}
+
+.top::after{
+    bottom: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%) scale(1) !important;
+}
+
+.left::after{
+    right: calc(100% + 19px);
+    top: 50%;
+    transform: translateY(-50%)  scale(1) !important;
+}
+
+.right::after {
+    left: calc(100% + 19px);
+    top: 50%;
+    transform: translateY(-50%)  scale(1) !important;
+}
+
+.bottom::after {
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%)  scale(1) !important;
+}
